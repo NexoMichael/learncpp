@@ -7,3 +7,8 @@ CMakeCache.txt
 Makefile
 
 *.out
+
+main
+main.id*
+main.nam
+main.til
