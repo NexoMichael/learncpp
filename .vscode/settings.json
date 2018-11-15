@@ -1,5 +1,18 @@
 {
     "cmake.configureOnOpen": true,
     "C_Cpp.default.configurationProvider": "vector-of-bool.cmake-tools",
-    "C_Cpp.configurationWarnings": "Disabled"
+    "C_Cpp.configurationWarnings": "Disabled",
+    "files.associations": {
+        "__config": "cpp",
+        "__nullptr": "cpp",
+        "cstddef": "cpp",
+        "exception": "cpp",
+        "initializer_list": "cpp",
+        "new": "cpp",
+        "stdexcept": "cpp",
+        "type_traits": "cpp",
+        "typeinfo": "cpp",
+        "algorithm": "cpp",
+        "iostream": "cpp"
+    }
 }

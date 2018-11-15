@@ -4,8 +4,7 @@ Debug/
 
 cmake_install.cmake
 CMakeCache.txt
-Makefile
-
+*/Makefile
 *.out
 
 main
