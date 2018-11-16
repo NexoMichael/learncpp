@@ -6,7 +6,7 @@
             "type": "shell",
             "command": "make",
             "args": [
-                "PROJECT=opengl",
+                "PROJECT=ch48",
             ],
             "group": {
                 "kind": "build",

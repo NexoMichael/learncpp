@@ -13,6 +13,17 @@
         "type_traits": "cpp",
         "typeinfo": "cpp",
         "algorithm": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "slist": "cpp",
+        "cfenv": "cpp",
+        "functional": "cpp",
+        "hashtable": "cpp",
+        "tuple": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "utility": "cpp",
+        "iosfwd": "cpp",
+        "ios": "cpp",
+        "limits": "cpp"
     }
 }
