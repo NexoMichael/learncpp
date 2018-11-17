@@ -24,6 +24,9 @@
         "utility": "cpp",
         "iosfwd": "cpp",
         "ios": "cpp",
-        "limits": "cpp"
+        "limits": "cpp",
+        "istream": "cpp",
+        "array": "cpp",
+        "iterator": "cpp"
     }
 }
