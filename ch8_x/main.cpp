@@ -17,7 +17,7 @@ bool blackjack(Deck deck, Player &player, Player &dealer)
         std::cout << "Your score: " << player.Score() << std::endl;
     }
 
-    while (player.getAnswer() == Player::HIT)
+    while (dealer.getAnswer() == Player::HIT)
     {
         deck.giveCard(dealer);
         if (dealer.Score() > 21)
