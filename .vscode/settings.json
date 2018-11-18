@@ -28,6 +28,9 @@
         "istream": "cpp",
         "array": "cpp",
         "iterator": "cpp",
-        "__tuple": "cpp"
+        "__tuple": "cpp",
+        "bitset": "cpp",
+        "memory": "cpp",
+        "random": "cpp"
     }
 }

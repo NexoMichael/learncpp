@@ -2,19 +2,18 @@
 
 class Ball
 {
-    std::string m_color = "black";
-    double m_size = 10;
+    std::string m_color;
+    double m_size;
 
   public:
-    Ball(std::string color = "black", double size = 10)
+    Ball(const std::string &color = "black", double size = 10)
+        : m_color{color},
+          m_size{size}
     {
-        m_color = color;
-        m_size = size;
     }
 
-    Ball(double size)
+    Ball(double size) : Ball("black", size)
     {
-        m_size = size;
     }
 
     void print()

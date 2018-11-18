@@ -6,7 +6,7 @@
             "type": "shell",
             "command": "make",
             "args": [
-                "PROJECT=ch85",
+                "PROJECT=ch8_13",
             ],
             "group": {
                 "kind": "build",
