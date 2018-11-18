@@ -38,7 +38,7 @@ struct Card
     CardSuite suite;
 };
 
-typedef std::array<Card, 52> Deck;
+using Deck = std::array<Card, 52>;
 
 void printCard(const Card &card)
 {
@@ -194,39 +194,39 @@ struct Player
     int score;
 };
 
-void giveCard(Player &player, Deck &deck, Card **cardPtr)
+void giveCard(Player &player, Deck &deck, Card *&cardPtr)
 {
-    if (*cardPtr == nullptr || *cardPtr == std::end(deck))
+    if (cardPtr == nullptr || cardPtr == std::end(deck))
     {
         shuffleDeck(deck);
         printDeck(deck);
-        *cardPtr = std::begin(deck);
+        cardPtr = std::begin(deck);
     }
 
     if (player.type == PlayerClass::PLAYER)
     {
         std::cout << "You given: ";
-        printCard(**cardPtr);
+        printCard(*cardPtr);
         std::cout << "\n";
     }
-    player.score += getCardValue(**cardPtr);
-    (*cardPtr)++;
+    player.score += getCardValue(*cardPtr);
+    cardPtr++;
 }
 
 bool blackjack(Deck deck, Player &player, Player &dealer)
 {
     Card *cardPtr = nullptr;
 
-    giveCard(dealer, deck, &cardPtr);
-    giveCard(player, deck, &cardPtr);
-    giveCard(player, deck, &cardPtr);
+    giveCard(dealer, deck, cardPtr);
+    giveCard(player, deck, cardPtr);
+    giveCard(player, deck, cardPtr);
     std::cout << "Your score: " << player.score << ". Dealer score: " << dealer.score << std::endl;
 
     while (1)
     {
         if (getAnswer() == Answer::STAND)
             break;
-        giveCard(player, deck, &cardPtr);
+        giveCard(player, deck, cardPtr);
         if (player.score > 21)
             return false;
         std::cout << "Your score: " << player.score << std::endl;
@@ -234,7 +234,7 @@ bool blackjack(Deck deck, Player &player, Player &dealer)
 
     while (dealer.score < 17)
     {
-        giveCard(dealer, deck, &cardPtr);
+        giveCard(dealer, deck, cardPtr);
         if (dealer.score > 21)
             return true;
         std::cout << "Dealer score: " << dealer.score << std::endl;

@@ -27,6 +27,7 @@
         "limits": "cpp",
         "istream": "cpp",
         "array": "cpp",
-        "iterator": "cpp"
+        "iterator": "cpp",
+        "__tuple": "cpp"
     }
 }
