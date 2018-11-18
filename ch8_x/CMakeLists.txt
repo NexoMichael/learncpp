@@ -6,7 +6,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Werror -Wall -Weffc++ -Wextra -Wsign-co
 
 project(main)
 
-set(SOURCE main.cpp Point3d.cpp Vector3d.cpp)
+set(SOURCE main.cpp card.cpp)
 
 
 add_executable(${PROJECT_NAME} ${SOURCE})
