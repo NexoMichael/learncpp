@@ -31,6 +31,7 @@
         "__tuple": "cpp",
         "bitset": "cpp",
         "memory": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "vector": "cpp"
     }
 }
