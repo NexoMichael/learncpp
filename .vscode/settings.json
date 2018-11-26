@@ -32,6 +32,7 @@
         "bitset": "cpp",
         "memory": "cpp",
         "random": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "string": "cpp"
     }
 }
