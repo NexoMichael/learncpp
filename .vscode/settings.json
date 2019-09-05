@@ -35,6 +35,11 @@
         "vector": "cpp",
         "string": "cpp",
         "__locale": "cpp",
-        "map": "cpp"
+        "map": "cpp",
+        "queue": "cpp",
+        "stack": "cpp",
+        "ostream": "cpp",
+        "sstream": "cpp",
+        "fstream": "cpp"
     }
 }

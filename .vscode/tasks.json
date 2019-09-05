@@ -6,7 +6,7 @@
             "type": "shell",
             "command": "make",
             "args": [
-                "PROJECT=ch15_x",
+                "PROJECT=emu",
             ],
             "group": {
                 "kind": "build",
